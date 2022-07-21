@@ -38,6 +38,11 @@
             </ul>
 
             <a href="tel:+18938392364"  class="telefon"> +1 893 839-23-64 </a>
+
+            <button  class="menu_open"   >
+                    <img src="Hamburger.png"    class="hamburger"    >
+            </button>
+
         </div>
 
 
@@ -73,7 +78,7 @@
 
                 <h3  class="grid_h"   >   Rebuilding the society     </h3>
 
-                <p  class="grid_txt"    >
+                <p  class="grid_txt"  id = "text_one"    >
                     Burning Man is a network of people inspired by the values reflected in the Ten Principles
                     and united in the pursuit of a more creative and connected existence in the world. Throughout
                     the year we work to build Black Rock City, home of the largest annual Burning Man gathering, and
@@ -87,7 +92,7 @@
 
                 <h3  class="grid_h"   >   This drives us     </h3>
 
-                <p  class="grid_txt"    >
+                <p  class="grid_txt"  >
                     Burning Man Project will bring experiences to people in grand, awe-inspiring and joyful ways
                     that lift the human spirit, address social problems, and inspire a sense of culture, community,
                     and civic engagement. Burning Man provides infrastructural tools and frameworks to support local
@@ -106,8 +111,8 @@
 
         <div class="grid_img"       >
 
-            <img class="imge"         src="img1.jpg"     >
-            <img  class="imge"   src="img2.jpg"     >
+            <img class="imge"         src="img1.jpg"   id = "img1"    >
+            <img  class="imge"   src="img2.jpg"  id = "img2"   >
             <img  class="imge"   src="img3.jpg"  id = "img3"   >
 
         </div>
@@ -136,6 +141,27 @@
     </div>
 
 </div>
+
+
+<script>
+
+    let hamburger = document.querySelector(".menu_open")
+
+
+    let menu = document.querySelector(".menu")
+
+    hamburger.addEventListener("click", hmb_click)
+
+    function hmb_click() {
+
+        menu.classList.toggle("show_menu")
+
+
+    }
+
+
+
+</script>
 
 
 
